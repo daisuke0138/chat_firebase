@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G's DEV15 class menber List</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+</head>
+<body>
+    <h1>G's Class DEV-15 Menber List</h1>
+    <div class="list-area">
+        <!-- データベースから生徒情報を以下に表示 -->
+        Student
+        <div id="studentlist" class="student-list-area">
+        </div>
+        Staff
+        <div id="stafflist" class="staff-list-area">
+        </div>
+    </div>
+    <div class="operation-bt">
+        <select class="type-select" id="type">
+                <option value="1">student</option>
+                <option value="2">staff</option>
+        </select>
+        <button type="button" id="save">登録</button>
+        <button type="button" id="overwrite">上書き</button>
+        <!-- <button type="button" id="dele">削除</button> -->
+        <button type="button" id="reload">読込み</button>
+        <input class="reloadnomclass" id="reloadnom" type="text" placeholder="読込No.">
+        <button type="button" id="reset">reset</button>
+    </div>
+    <div class="edit-area">
+        <img class="menber-img" src="" alt="" >
+    <form>
+        <table class="stats">
+        <tr>
+            <th >No.</th>
+            <td >
+                <input id="nom" type="text" placeholder="番号">
+            </td>
+        </tr>
+        <tr>
+            <th>Name:</th>
+            <td>
+                <input id="name" type="text" placeholder="名前">
+            </td>
+        </tr>
+        <tr>
+            <th>Class:</th>
+            <td>
+                <input id="class" type="text" placeholder="DEV-**">
+            </td>
+        </tr>
+        <tr>
+            <th>age:</th>
+            <td>
+                <input id="age" type="text" placeholder="年齢">
+            </td>
+        </tr>
+        <tr>
+            <th>Skil:</th>
+            <td>
+                <textarea id="skil" class="skil"></textarea>
+            </td>
+        </tr>
+        </table>
+    </form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- firestoreへのアクセス -->
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-storage-compat.js"></script>
+
+<!-- gs://chat-firebase-49cf6.appspot.com -->
+
+<!-- firestoreを使用するときはtype＝”module”を追加しないとjsと連携しない -->
+<script type="module" src="/script.js">
+
+
+
+
+</script>
+</body>
+</html>
