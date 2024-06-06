@@ -1,0 +1,135 @@
+body{
+    background-image:url(../imag/backgrand01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    font-size: 3vh;
+    /* margin: 0.5rem; */
+    font-weight: bold;
+    margin: 0;
+}
+/* menber表示 css */
+.list-area {
+    font-weight: bold;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.student-list-area {
+    outline: auto;
+    height: 20vh;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(175, 175, 175, 0.5);
+    display: flex;
+}
+
+.student-card {
+    width: 20vw;
+    height: 20vh;
+    outline: auto;
+    margin: 0.5rem;
+}
+
+.staff-list-area {
+    outline: auto;
+    height: 25vh;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgba(175, 175, 175, 0.5);
+    display: flex;
+}
+
+.staff-card {
+    width: 20vw;
+    height: 20vh;
+    outline: auto;
+    margin: 0.5rem;
+}
+
+/* button css */
+.operation-bt {
+    padding: 0 0.5rem;
+    width: 50%;
+    display: flex
+}
+
+button {
+    outline: auto;
+    background-color: rgb(200, 199, 202);
+    width: 6vw;
+    height: 3vh;
+    text-align: center;
+    font-weight: bold;
+    margin-right:1vw;
+}
+
+.reloadnomclass {
+    outline: auto;
+    width: 6vw;
+    background-color: rgb(200, 199, 202);
+    text-align: center;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+.type-select{
+    outline: auto;
+    background-color: rgb(200, 199, 202);
+    text-align: center;
+    width: 6vw;
+    height: 3vh;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+/* menber登録エリア */
+.edit-area{
+    display: flex;
+    outline: auto;
+    height: 28vh;
+    width: 35vw;
+    margin: 0.5rem;
+    background-color: rgba(175, 175, 175, 0.5);
+}
+
+.edit-area input {
+    text-decoration-line: underline;
+}
+
+.stats th{
+    vertical-align: top;
+}
+
+th {
+    font-size: 0.8rem;
+}
+
+.stats input {
+    height: 3vh;
+    font-size: 1.7vh;
+    font-weight: bold;
+    background-color: rgba(175, 175, 175, 0.5);
+}
+
+textarea {
+    height: 3vh;
+    width: 15vw;
+    outline: auto;
+    background-color: rgba(175, 175, 175, 0.5);
+}
+
+.menber-img {
+    height: 15vh;
+    width: 15vw;
+    margin: 0.5rem;
+}
